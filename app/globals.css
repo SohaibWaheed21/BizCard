@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist+Mono:wght@300;400;500&display=swap');
+
+:root {
+  --bg: #f8f7f4;
+  --surface: #ffffff;
+  --border: #e5e2da;
+  --text: #1a1a1a;
+  --muted: #6b6860;
+  --accent: #1a1a1a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Geist Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif {
+  font-family: 'Instrument Serif', serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+/* Preview card themes */
+.theme-minimal {
+  --card-bg: #ffffff;
+  --card-text: #1a1a1a;
+  --card-muted: #6b6860;
+  --card-accent: #1a1a1a;
+  --card-border: #e5e2da;
+  --card-tag-bg: #f0ede8;
+}
+
+.theme-dark {
+  --card-bg: #111111;
+  --card-text: #f0ede8;
+  --card-muted: #888888;
+  --card-accent: #ffffff;
+  --card-border: #2a2a2a;
+  --card-tag-bg: #1e1e1e;
+}
+
+.theme-warm {
+  --card-bg: #fef9f0;
+  --card-text: #2d1f0e;
+  --card-muted: #8b6f47;
+  --card-accent: #c9602a;
+  --card-border: #e8d5b7;
+  --card-tag-bg: #f5e6ce;
+}
+
+.theme-slate {
+  --card-bg: #f0f4f8;
+  --card-text: #1e2a3a;
+  --card-muted: #5a7080;
+  --card-accent: #2563eb;
+  --card-border: #d0dce8;
+  --card-tag-bg: #dce8f4;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+  animation: fadeUp 0.35s ease forwards;
+}
