@@ -134,7 +134,7 @@ export default function Home() {
                 style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
               >
                 <p className="text-[12px] mb-3" style={{ color: "var(--muted)" }}>
-                  Want a full website like this for your business?
+                  Want a full furnished website like this for your business?
                 </p>
                 <a
                   href="mailto:sohaibwaheed06@gmail.com?subject=I want a website for my business"
